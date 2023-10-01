@@ -24,9 +24,7 @@ class Fib extends Component {
       seenIndexes: seenIndexes.data,
     });
   }
-  testMethod() {
-    console.log("test")
-  }
+
   handleSubmit = async (event) => {
     event.preventDefault();
     await axios.post('/api/values', {
